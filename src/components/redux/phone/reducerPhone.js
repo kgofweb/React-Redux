@@ -13,6 +13,7 @@ const phoneReducer = (state = initStatePhone, action) => {
         ...state,
         phones: state.phones - 1
       }
+      // return a new state
     default: return state
   }
 }

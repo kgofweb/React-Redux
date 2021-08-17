@@ -21,3 +21,7 @@
   color: white;
   margin-left: 2rem;
 }
+
+.navList:hover {
+  color: #4834d4;
+}
