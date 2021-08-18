@@ -6,7 +6,6 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* text-align: center; */
 }
 
 img {
@@ -38,6 +37,11 @@ img {
   margin-bottom: 1rem;
 }
 
+.btn-container {
+  width: 100%;
+  display: flex;
+}
+
 .buy-button {
   width: 100%;
   padding: .6rem;
@@ -47,6 +51,13 @@ img {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+input {
+  width: 15%;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .count {

@@ -14,12 +14,15 @@ const TvContainer = () => {
         Available:
         <span id="count" className="count"> { tvNum } </span>
       </p>
-      <button 
-        className="buy-button"
-        onClick={() => dispatch(buyTV())}
-      >
-        Buy Phone
-      </button>
+      <div className="btn-container">
+        <button 
+          className="buy-button"
+          onClick={() => dispatch(buyTV())}
+        >
+          Buy Phone
+        </button>
+        <input type="text" value="" />
+      </div>
     </div>
   )
 }

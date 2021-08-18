@@ -1,13 +1,16 @@
 import phoneImg from '../../../img/phone.png'
+import { useState } from 'react'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
 import { buyPhone } from '../../redux/phone/actionPhone'
 
 const PhonesContainer = () => {
+  const [totalPhone, setTotalPhone] = useState(1)
+
   // Afficher le nombre de phone
   const phones = useSelector(state => state.phone.phones);
   // Dispatcher notre action
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(totalPhone);
 
   return (
     <div className="container">
@@ -16,12 +19,15 @@ const PhonesContainer = () => {
         Available:
         <span id="count" className="count"> {phones} </span>
       </p>
-      <button 
-        className="buy-button"
-        onClick={() => dispatch(buyPhone())}
-      >
-        Buy Phone
-      </button>
+      <div className="btn-container">
+        <button 
+          className="buy-button"
+          onClick={() => dispatch(buyPhone(totalPhone))}
+        >
+          Buy Phone
+        </button>
+        <input type="text" value={totalPhone} onChange={e => setTotalPhone(e.target.value)} />
+      </div>
     </div>
   )
 }
