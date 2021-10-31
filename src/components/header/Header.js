@@ -6,12 +6,12 @@ const Header = () => {
   return (
     <Router>
       <nav className={navStyle.nav}>
-        <Link className={navStyle.logo} to='/'>Shop</Link>
+        <Link to='/' className={navStyle.logo}>Shop</Link>
         <ul>
-          <Link className={navStyle.navList}>
+          <Link to='/' className={navStyle.navList}>
             Shop
           </Link>
-          <Link className={navStyle.navList}>
+          <Link to='/' className={navStyle.navList}>
             Amazone
           </Link>
         </ul>

@@ -1,7 +1,6 @@
 import phoneImg from '../../../img/phone.png'
 import { useState } from 'react'
-import { useSelector } from 'react-redux'
-import { useDispatch } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { buyPhone } from '../../redux/phone/actionPhone'
 
 const PhonesContainer = () => {
@@ -73,5 +72,5 @@ export default PhonesContainer
 //   }
 // }
 
-// // Generer le composant d'ordre supperieur
+// Generer le composant d'ordre supperieur
 // export default connect(mapStateToProps, mapDispatchToProps)(PhonesComponent)
